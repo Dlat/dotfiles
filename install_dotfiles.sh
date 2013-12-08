@@ -1,3 +1,3 @@
 #!/bin/sh
 set e
-cp -r dotfiles/. $HOME
+ln -sf ~/github/dotfiles/dotfiles/.vimrc ~/.vimrc
