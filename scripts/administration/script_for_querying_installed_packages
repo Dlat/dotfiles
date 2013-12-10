@@ -1,0 +1,5 @@
+f dpkg-query -Wf'${db:Status-abbrev}' "${1}" 2>/dev/null | grep -q '^i'; then
+    printf 'Why yes, the package "%s" _is_ installed!\n' "${1}"
+else
+    printf 'I regret to inform you that the package "%s" is not currently installed.\n' "${1}"
+fi
